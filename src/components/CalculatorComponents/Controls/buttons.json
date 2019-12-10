@@ -1,0 +1,63 @@
+{
+  "buttons": [
+    {
+      "name": "C",
+      "isClearButton": true
+    },
+    {
+      "name": "÷",
+      "isOperatorButton": true
+    },
+    {
+      "name": "7"
+    },
+    {
+      "name": "8"
+    },
+    {
+      "name": "9"
+    },
+    {
+      "name": "*",
+      "isOperatorButton": true
+    },
+    {
+      "name": "4"
+    },
+    {
+      "name": "5"
+    },
+    {
+      "name": "6"
+    },
+    {
+      "name": "-",
+      "isOperatorButton": true
+    },
+    {
+      "name": "1"
+    },
+    {
+      "name": "2"
+    },
+    {
+      "name": "3"
+    },
+    {
+      "name": "+",
+      "isOperatorButton": true
+    },
+    {
+      "name": "0",
+      "isZeroButton": true
+    },
+    {
+      "name": "."
+    },
+    {
+      "name": "=",
+      "isEqualButton": true,
+      "isOperatorButton": true
+    }
+  ]
+}
