@@ -18,6 +18,12 @@ class CalculatorContextProvider extends Component {
       currentFormula: ''
     })
   }
+
+  setCurrentFormula = (value) => {
+    this.setState({
+      currentFormula: value
+    })
+  }
   render() { 
     return ( 
       <CalculatorContext.Provider value={{...this.state, addToFormula: this.addToFormula, clearFormula:this.clearFormula}}>
