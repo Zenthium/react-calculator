@@ -4,7 +4,8 @@ export const CalculatorContext = createContext();
 
 class CalculatorContextProvider extends Component {
   state = { 
-    currentFormula: ''
+    currentFormula: '',
+    resultArray: []
   }
 
   addToFormula = (op) => {
@@ -24,9 +25,15 @@ class CalculatorContextProvider extends Component {
       currentFormula: value
     })
   }
+
+  evaluateFormula = () => {
+    this.setState(prevState => {
+      return {currentFormula: eval(prevState.currentFormula)}
+    })
+  }
   render() { 
     return ( 
-      <CalculatorContext.Provider value={{...this.state, addToFormula: this.addToFormula, clearFormula:this.clearFormula}}>
+      <CalculatorContext.Provider value={{...this.state, addToFormula: this.addToFormula, clearFormula:this.clearFormula, evaluateFormula: this.evaluateFormula}}>
         {this.props.children}
       </CalculatorContext.Provider>
      );
